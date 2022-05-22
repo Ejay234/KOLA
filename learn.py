@@ -74,7 +74,7 @@ def poll(transcript_id):
     return False
 
 
-def pipeline(filename):
+def main(filename):
     audio_url = upload(filename)
     transcribe_id = transcribe(audio_url)
     while True:
@@ -86,4 +86,4 @@ def pipeline(filename):
 
 
 if __name__ == '__main__':
-    pipeline("<MP3 File")
+    main("<MP3 File")
